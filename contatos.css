@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 20px;
+    border-color: #bbbbbb;
+    border-style: solid;
+}
+
+#mensagem {
+    border-radius: 20px 20px 0px 20px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+#botao {
+    width: 40%;
+    background: dodgerblue;
+    border: none;
+    padding: 8px 17px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#botao:hover {
+    background: blue;
+    transform: scale(1.1);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0 6px;
+        
+    }
+
+    nav a {
+        font-size: 21px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    form {
+        margin: 20px 10px;
+    }
+
+    .input-padrao {
+        width: 80%;
+    }
+
+    #botao {
+        width: 70%;
+    }
+
+    table {
+        margin: 20px 10px;
+    }
+
+    footer img {
+        width: 25%;
+    }
+
+}

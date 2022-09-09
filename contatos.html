@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="header_footer.css">
+        <link rel="stylesheet" href="contatos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form action="">
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domínio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+                <fieldset class="custom-radio"> <!--Usamos fieldset no lugar de div quando se trata de um conjunto de elementos de mesmo valor-->
+                    <legend>Como prefere o nosso contato?</legend> <!-- Usamos - legend - para marcar um título de um grupo de campos do formulário -->
+                    <label for="radio-email">
+                        <input name="contato" type="radio" value="email" id="radio-email" class="radio-button">
+                        Telefone
+                    </label>
+                    
+
+                    <label for="radio-telefone">
+                        <input name="contato" type="radio" value="telefone" id="radio-telefone" class="radio-button">
+                        E-mail
+                    </label>
+                    
+
+                    <label for="radio-whatsapp">
+                        <input name="contato" type="radio" value="whatsapp" id="radio-whatsapp" class="radio-button" checked>
+                        WhatsApp
+                    </label>                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+
+                <label for="checar" class="checkbox"><input type="checkbox" id="checar" checked> Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" id="botao">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >Segunda</td>
+                        <td>8h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h às 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="logo-branco.png" alt="Logo do rodapé">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
+    </body>
+</html>
