@@ -103,10 +103,6 @@ nav a:hover {
     line-height: 1.5;
 }
 
-.itens:before {
-    content: "✀";
-}
-
 .itens:first-child {     /*nth-child(3) modifico o terceiro da lista*/
     font-weight: bold;   /*nth-child(2n) modifico os elementos pares da lista*/
 }
